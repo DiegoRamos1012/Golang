@@ -5,7 +5,20 @@ import (
 	"errors"
 	// O pacote "fmt" fornece funções para formatação e entrada/saída de dados
 	"fmt"
+	"strconv"
 )
+
+func somar(a,b float64) (float64, error) {
+	return a + b, nil	
+}
+
+func subtrair (a, b float64) (float64, error) {
+	return a - b, nil
+}
+
+func multiplicar (a, b float64) (float64, error) {
+	return a * b, nil
+}
 
 func dividir(a, b float64) (float64, error) { //float64 são números decimais de precisão dupla
 	if b == 0 {
@@ -14,28 +27,59 @@ func dividir(a, b float64) (float64, error) { //float64 são números decimais d
 	return a / b, nil // nil significa "nenhum erro ocorreu"
 }
 
-func exemploErros() {
-	var a, b float64
+func calculadora() {
+    var inputA, inputB, escolha string
+    var a, b float64
+    var err error
 
-	fmt.Print("Digite o primeiro número: ")
-	// Lê o valor digitado pelo usuário e armazena na variável "a"
-    // O "&" obtém o endereço de memória da variável para que Scan possa modificá-la
-	fmt.Scan(&a)
+    fmt.Println("\n==== Calculadora Simples ====")
+    fmt.Println("1 - Soma")
+    fmt.Println("2 - Subtração")
+    fmt.Println("3 - Multiplicação")
+    fmt.Println("4 - Divisão")
+    fmt.Print("\nEscolha uma operação (1-4): ")
+    fmt.Scanln(&escolha)
 
-	fmt.Print("Digite o segundo número: ")
-	fmt.Scan(&b)
+    fmt.Print("Digite o primeiro número: ")
+    fmt.Scanln(&inputA)
+    
+    // Converte o primeiro número
+    a, err = strconv.ParseFloat(inputA, 64)
+    if err != nil {
+        fmt.Println("Erro: O primeiro valor não é um número válido")
+        return
+    }
 
-	// Chama a função dividir com os valores informados e captura os retornos
-    // - resultado: contém o valor da divisão (se bem-sucedida)
-    // - err: contém informações sobre o erro (se ocorrer)
-	resultado, err := dividir(a, b)
-	if err != nil {
-		// Se houver erro, exibe a mensagem de erro para o usuário
-		fmt.Println("Erro:", err)
-	} else {
-		
-	// %g é um especificador de formato que remove zeros desnecessários à direita
-    fmt.Printf("Resultado de %g / %g = %g\n", a, b, resultado)
-	}	
+    fmt.Print("Digite o segundo número: ")
+    fmt.Scanln(&inputB)
+    
+    // Converte o segundo número
+    b, err = strconv.ParseFloat(inputB, 64)
+    if err != nil {
+        fmt.Println("Erro: O segundo valor não é um número válido")
+        return
+    }
+
+    // Executa a operação escolhida
+    switch escolha {
+    case "1":
+        resultado, _ := somar(a, b)
+        fmt.Printf("Soma: %g + %g = %g\n", a, b, resultado)
+    case "2":
+        resultado, _ := subtrair(a, b)
+        fmt.Printf("Subtração: %g - %g = %g\n", a, b, resultado)
+    case "3":
+        resultado, _ := multiplicar(a, b)
+        fmt.Printf("Multiplicação: %g × %g = %g\n", a, b, resultado)
+    case "4":
+        resultado, err := dividir(a, b)
+        if err != nil {
+            fmt.Println("Erro:", err)
+        } else {
+            fmt.Printf("Divisão: %g ÷ %g = %g\n", a, b, resultado)
+        }
+    default:
+        fmt.Println("Opção inválida!")
+    }
 }
 

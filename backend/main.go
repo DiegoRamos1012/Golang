@@ -7,6 +7,6 @@ func main() {
 
     fmt.Println("--------------------------")
 
-    exemploErros()
+    calculadora()
 }
 
