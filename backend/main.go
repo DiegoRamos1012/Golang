@@ -3,10 +3,13 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println("Hello world")
+	fmt.Println("Hello world")
 
-    fmt.Println("--------------------------")
+	fmt.Println("--------------------------")
 
-    calculadora()
+	// calculadora()
+
+	// PraticandoArrays()
+
+	ParOuImpar()
 }
-

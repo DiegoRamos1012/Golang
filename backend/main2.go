@@ -27,7 +27,7 @@ func dividir(a, b float64) (float64, error) { //float64 são números decimais d
 	return a / b, nil // nil significa "nenhum erro ocorreu"
 }
 
-func calculadora() {
+func calculadora() { // Não está sendo usada pois desativei a função na main
 	var inputA, inputB, escolha string
 	var a, b float64
 	var err error
