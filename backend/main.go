@@ -11,5 +11,7 @@ func main() {
 
 	// PraticandoArrays()
 
-	ParOuImpar()
+	// ParOuImpar()
+
+	executarFibonacci()
 }
