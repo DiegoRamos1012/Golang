@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello world")
+	fmt.Println("Hello, world")
 
 	fmt.Println("--------------------------")
 
@@ -13,5 +13,9 @@ func main() {
 
 	// ParOuImpar()
 
-	executarFibonacci()
+	// executarFibonacci()
+
+	// GeradorDeSenha()
+
+	ConversorGraus()
 }
