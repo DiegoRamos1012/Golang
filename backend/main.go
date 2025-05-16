@@ -11,11 +11,17 @@ func main() {
 
 	// PraticandoArrays()
 
+	// PraticandoArrays2()
+
 	// ParOuImpar()
 
 	// executarFibonacci()
 
 	// GeradorDeSenha()
 
-	ConversorGraus()
+	// ConversorGraus()
+
+	// Relogio()
+
+	ChecarNumero(42) // Replace 42 with the actual number you want to check
 }
