@@ -31,7 +31,7 @@ func VerificarEntreUmEDez(num int64) bool {
 }
 
 // Função principal para demonstração
-func main() {
+func ChequeSeuNumero() {
 	ChecarNumero()
 
 	// Para evitar que o console feche imediatamente em ambientes Windows

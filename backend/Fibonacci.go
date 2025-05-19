@@ -2,7 +2,7 @@ package main
 
 import ("fmt")
 
-func FibonacciIterativo (n int) []int { // Os parametros são (n int) e retorna um array de inteiros ([]int
+func FibonacciIterativo (n int) []int { // Os parametros são (n int) e retorna um array de inteiros ([]int)
 	if n <= 0 {
 		return []int{}
 	}
