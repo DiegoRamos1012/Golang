@@ -25,5 +25,7 @@ func main() {
 
 	// ChecarNumero() 
 
-	AdivinheONumero()
+	// AdivinheONumero()
+
+	IlhaDoTesouro()
 }
