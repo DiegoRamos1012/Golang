@@ -20,7 +20,7 @@ func IlhaDoTesouro() {
 	// Cria um mapa vazio 5x5
 	mapa := make([][]string, 5)
 	for i := range mapa {
-		mapa[i] = make([]string, 5)
+		mapa[i] = make([]   string, 5)
 		// Inicializa todas as posições como vazias
 		for j := range mapa[i] {
 			mapa[i][j] = "~~" // Representando água ou área vazia
@@ -51,7 +51,7 @@ func IlhaDoTesouro() {
 
 	// Posiciona itens mágicos aleatoriamente (3 itens)
 	itensColocados := make([]string, 3)
-	for i := 0; i < 3; i++ {
+	for i := range 3 {
 		itensColocados[i] = itensMagicos[rand.Intn(len(itensMagicos))]
 
 		// Encontra uma posição vazia

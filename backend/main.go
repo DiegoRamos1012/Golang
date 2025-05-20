@@ -27,5 +27,7 @@ func main() {
 
 	// AdivinheONumero()
 
-	IlhaDoTesouro()
+	// IlhaDoTesouro()
+
+	Loops()
 }
