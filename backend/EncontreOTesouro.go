@@ -324,14 +324,14 @@ func IlhaDoTesouro() {
 					if escolhaJogador == escolhaGuardiao {
 						fmt.Println("\nOutro EMPATE! O Guardião suspira profundamente.")
 						fmt.Println("'Ah, de novo? Cansei, pega logo esse negócio, vou me aposentar'")
-						fmt.Printf("\nPARABÉNS! Você encontrou o... %s após %d turnos!\n", tesouroEscolhido, turnos)
+						fmt.Printf("\nPARABÉNS! Você encontrou o...%s após %d turnos!\n", tesouroEscolhido, turnos)
 						jogando = false
 					} else if (escolhaJogador == 1 && escolhaGuardiao == 3) ||
 						(escolhaJogador == 2 && escolhaGuardiao == 1) ||
 						(escolhaJogador == 3 && escolhaGuardiao == 2) {
 						fmt.Println("\nVOCÊ VENCEU! O Guardião aceita a derrota com dignidade.")
 						fmt.Println("'Um acordo é um acordo. O tesouro é seu, aventureiro.'")
-						fmt.Printf("\nPARABÉNS! Você encontrou o... %s após %d turnos!\n", tesouroEscolhido, turnos)
+						fmt.Printf("\nPARABÉNS! Você encontrou o...%s após %d turnos!\n", tesouroEscolhido, turnos)
 						jogando = false
 					} else {
 						fmt.Println("\nVOCÊ PERDEU! O Guardião solta uma gargalhada maléfica.")
@@ -353,7 +353,7 @@ func IlhaDoTesouro() {
 					}
 				} else {
 					// 30% de chance de não encontrar o Guardião
-					fmt.Printf("\nPARABÉNS! Depois de muito trabalho árduo, você encontrou o... %s após %d turnos!\n", tesouroEscolhido, turnos)
+					fmt.Printf("\nPARABÉNS! Depois de muito trabalho árduo, você encontrou o...%s após %d turnos!\n", tesouroEscolhido, turnos)
 					jogando = false
 				}
 
@@ -421,7 +421,7 @@ func IlhaDoTesouro() {
 		// Verifica se encontrou algo
 		switch posicaoOriginal {
 		case "T":
-			fmt.Printf("\nPARABÉNS! Depois de muito trabalho árduo e sono ruim, Você encontrou o... %s após %d turnos!\n", tesouroEscolhido, turnos)
+			fmt.Printf("\nPARABÉNS! Depois de muito trabalho árduo e sono ruim, Você encontrou o...%s após %d turnos!\n", tesouroEscolhido, turnos)
 			jogando = false
 
 		case "O":
