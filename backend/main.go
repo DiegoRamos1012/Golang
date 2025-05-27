@@ -29,5 +29,11 @@ func main() {
 
 	// IlhaDoTesouro()
 
-	Loops()
+	// Loops()
+
+	// Slice_Array()
+
+	// Structs()
+
+	Maps()
 }
