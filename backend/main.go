@@ -35,5 +35,11 @@ func main() {
 
 	// Structs()
 
-	Maps()
-}
+	// Maps()
+
+	// Ponteiros()
+
+	// Goroutines()
+
+	Channels()
+} 
