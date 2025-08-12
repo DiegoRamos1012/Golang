@@ -4,7 +4,6 @@
 // Including main package
 package main
 
-// Importing time and fmt
 import (
     "fmt" // Pacote de formatação
     "time" // Pacote de exibição de tempo

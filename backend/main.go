@@ -7,7 +7,7 @@ func main() {
 
 	fmt.Println("--------------------------")
 
-	// calculadora()
+	calculadora()
 
 	// PraticandoArrays()
 
@@ -21,7 +21,7 @@ func main() {
 
 	// ConversorGraus()
 
-	// Relogio()
+	 Relogio()
 
 	// ChecarNumero() 
 
@@ -41,5 +41,5 @@ func main() {
 
 	// Goroutines()
 
-	Channels()
+	// Channels()
 } 
